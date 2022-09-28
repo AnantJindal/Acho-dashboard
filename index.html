@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACKO</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assests/styles/style.css">
+</head>
+
+
+<body>
+
+    <!-- Header Part -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-sharp fa-solid fa-bars" id="menuicon" onclick="openSideBar()"></i>
+                <img src="assests/images/logo.svg" alt="ACKO">
+            </div>
+            <div class="sideContent">
+                <div class="inputContainer">
+                    <input type="text" placeholder="teamlease">
+                </div>
+                <div class="dropdown">
+                    <input id="dropcheck" class="dropcheck" type="checkbox">
+                    <label for="dropcheck" class="dropbtn">
+                        <div class="imageContainer">
+                            <img src="assests/images/userprofile.svg" class="userImage">
+                        </div>
+                        <h6>administrator</h6>
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mobileSider" id="mobileSideBar">
+        <div class="sub-menu">
+            <h3>General
+                <i class="fa-sharp fa-solid fa-square-xmark" onclick="closeSideBar()"></i>
+            </h3>
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <img src="assests/images/overview.svg" alt="Overview">
+                        <span>Overview</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-menu">
+            <h3>POLICY MANAGEMENT</h3>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/policysearch.svg" alt="Policy">
+                        <span>Policy Search </span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/policyupload.svg" alt="PolicyUpload">
+                        <span> Policy Upload</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/uploadhistory.svg" alt="Upload History">
+                        <span>Upload History</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-menu">
+            <h3>Claims management </h3>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/trackclaims.svg" alt="Track">
+                        <span>Track Claims</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/createclaims.svg" alt="Create">
+                        <span>Create Claims</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-menu">
+            <h3>Finance management</h3>
+            <ul>
+                <li class="">
+                    <a href="#">
+                        <img src="assests/images/apdtracker.svg" alt="APD">
+                        <span>APD tracker</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main content -->
+
+    <div class="mainContent">
+        <!-- Sidebar -->
+
+        <aside>
+            <div class="sub-menu">
+                <h3>General</h3>
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <img src="assests/images/overview.svg" alt="Overview">
+                            <span> Overview</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-menu">
+                <h3>POLICY MANAGEMENT</h3>
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/policysearch.svg" alt="Policy">
+                            <span>Policy Search </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/policyupload.svg" alt="PolicyUpload">
+                            <span> Policy Upload</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/uploadhistory.svg" alt="Upload History">
+                            <span>Upload History</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-menu">
+                <h3>Claims management </h3>
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/trackclaims.svg" alt="Track">
+                            <span>Track Claims</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/createclaims.svg" alt="Create">
+                            <span>Create Claims</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-menu">
+                <h3>Finance management</h3>
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <img src="assests/images/apdtracker.svg" alt="APD">
+                            <span>APD tracker</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </aside>
+
+
+        <div class="OverViewPart">
+            <div class="overviewContainer">
+                <h1>Overview</h1>
+
+                <div class="tablesection">
+
+                    <h2 class="table-name">Product Summary</h2>
+                    <div>
+                    <table>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Version</th>
+                            <th>Started On</th>
+                            <th>Status</th>
+                            <th>Total Policies</th>
+                            <th>View Details</th>
+                        </tr>
+                        <tr>
+                            <td>redbus_trip</td>
+                            <td>3.0.0</td>
+                            <td>12 May 2021</td>
+                            <td>Expiring on 11 May 2022</td>
+                            <td>245</td>
+                            <td><a href="#"> <img src="assests/images/eye.svg" alt="Eye"> </a></td>
+                        </tr>
+                        <tr>
+                            <td>redbus_opd</td>
+                            <td>2.0.0</td>
+                            <td>11 Jan 2021</td>
+                            <td>Expiring on 10 Jan 2021</td>
+                            <td>445</td>
+                            <td><a href="#"> <img src="assests/images/eye.svg" alt="Eye"> </a></td>
+
+
+                        </tr>
+                        <tr>
+                            <td>redbus_trip</td>
+                            <td>2.0.0</td>
+                            <td>12 May 2020</td>
+                            <td>Expiring on 11 May 2021</td>
+                            <td>23000</td>
+                            <td><a href="#"> <img src="assests/images/eye.svg" alt="Eye"> </a></td>
+
+
+                        </tr>
+                        <tr>
+                            <td>redbus_trip</td>
+                            <td>1.0.0</td>
+                            <td>15 Dec 2019</td>
+                            <td>Expiring on 11 May 2020</td>
+                            <td>9458</td>
+                            <td><a href="#"> <img src="assests/images/eye.svg" alt="Eye"> </a></td>
+
+
+                        </tr>
+                        <tr>
+                            <td>redbus_opd</td>
+                            <td>1.0.0</td>
+                            <td>11 Jan 2020</td>
+                            <td>Expiring on 10 Jan 2021</td>
+                            <td>499</td>
+                            <td><a href="#"> <img src="assests/images/eye.svg" alt="Eye"> </a></td>
+
+
+                        </tr>
+                    </table>
+                </div>
+                    <button>
+                        <img src="assests/images/eye.svg" alt="Eye">
+                        Show inactive Products
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9a2f4adca0.js" crossorigin="anonymous"></script>
+<script src="assests/scripts/script.js"> </script>
+</body>
+
+</html>

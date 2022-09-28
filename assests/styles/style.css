@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "helvetica-bold";
+  src: url(../fonts/helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "helvetica-boldoblique";
+  src: url(../fonts/helvetica-boldoblique.ttf);
+}
+@font-face {
+  font-family: "helvetica-light";
+  src: url(../fonts/helvetica-light.ttf);
+}
+@font-face {
+  font-family: "helvetica-oblique";
+  src: url(../fonts/helvetica-oblique.ttf);
+}
+@font-face {
+  font-family: helvetica;
+  src: url(../fonts/helvetica.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  padding: 20px 25px;
+  background-color: #6851A0;
+  left: 0;
+  right: 0;
+}
+header .container {
+  position: relative;
+}
+header .container .logo #menuicon {
+  color: white;
+  display: none;
+}
+header .container .sideContent {
+  display: flex;
+}
+header .container .sideContent .inputContainer input {
+  outline: none;
+  padding: 7px;
+  background-color: #8677ac;
+  color: #ffffff;
+  border-radius: 90px;
+  width: 230px;
+  height: 15px;
+  border: 1px solid transparent;
+}
+header .container .sideContent .inputContainer input::-moz-placeholder {
+  color: #ffffff;
+}
+header .container .sideContent .inputContainer input:-ms-input-placeholder {
+  color: #ffffff;
+}
+header .container .sideContent .inputContainer input::placeholder {
+  color: #ffffff;
+}
+header .container .sideContent .dropdown {
+  width: 136px;
+  display: flex;
+  align-items: flex-start;
+}
+header .container .sideContent .dropdown label h6 {
+  margin-top: 2%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-left: 5%;
+}
+header .container .sideContent .dropdown label .userImage {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .container .dropbtn {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+header .container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header .container .dropdown label {
+  display: flex;
+  align-items: center;
+}
+header .container .dropdown label img {
+  margin-left: 10px;
+}
+header .container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F1F1F1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 3%;
+  z-index: 1;
+}
+header .container .dropdown-content a {
+  color: rgb(44, 96, 194);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header .container .dropdown-content a:hover {
+  background-color: rgb(44, 96, 194);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 1.5s ease-in-out;
+}
+header .container .dropcheck {
+  position: absolute;
+  visibility: hidden;
+}
+header .container .dropcheck:checked ~ .dropdown-content {
+  display: block;
+  width: 80%;
+  margin-top: 36%;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.mainContent {
+  display: flex;
+}
+.mainContent aside {
+  position: fixed;
+  margin-top: 72px;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+}
+.mainContent aside .sub-menu h3 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #172B4D;
+}
+.mainContent aside .sub-menu ul {
+  margin-top: 16px;
+}
+.mainContent aside .sub-menu ul li {
+  margin-top: 20px;
+  margin-left: 3%;
+}
+.mainContent aside .sub-menu ul li a {
+  text-decoration: none;
+  width: 175px;
+  height: 24px;
+  display: flex;
+  gap: 10px;
+  color: #546E7A;
+}
+.mainContent aside .sub-menu ul li a img {
+  height: 20px;
+  width: 20px;
+}
+.mainContent aside .sub-menu ul li a span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+.mainContent aside .sub-menu ul li:first-child {
+  margin-top: 10px;
+}
+.mainContent aside .sub-menu ul .active a {
+  color: #6851A0;
+}
+.mainContent aside hr {
+  margin-top: 29px;
+  padding: 0;
+}
+
+.OverViewPart {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100vh;
+  margin-top: 72px;
+}
+.OverViewPart .overviewContainer {
+  margin-left: 255px;
+  padding: 0px 64px;
+}
+.OverViewPart .overviewContainer h1 {
+  padding: 42px 0px 24px 0px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.06px;
+  color: #263238;
+}
+.OverViewPart .tablesection {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px rgba(63, 63, 68, 0.05);
+  border-radius: 16px;
+  padding: 0px 24px 24px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.OverViewPart .tablesection .table-name {
+  padding: 24px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.06px;
+  color: #000000;
+}
+.OverViewPart .tablesection div {
+  overflow-x: auto;
+}
+.OverViewPart .tablesection div table {
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 24px;
+  margin-right: 32px;
+  margin-bottom: 48px;
+}
+.OverViewPart .tablesection div table tr th {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #263238;
+}
+.OverViewPart .tablesection div table tr td {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.OverViewPart .tablesection td,
+.OverViewPart .tablesection th {
+  text-align: left;
+  padding: 16px 0px;
+}
+.OverViewPart .tablesection tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.OverViewPart .tablesection tr td:nth-child(5) {
+  text-align: center;
+}
+.OverViewPart .tablesection button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #434F5A;
+  align-self: center;
+  border: 1px solid #434F5A;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 13px;
+}
+.OverViewPart .tablesection button img {
+  margin-right: 11px;
+}
+
+.mobileSider {
+  display: none;
+  position: absolute;
+  width: 60vw;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  z-index: 799;
+}
+.mobileSider .sub-menu {
+  padding: 20px;
+}
+.mobileSider .sub-menu h3 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #172B4D;
+}
+.mobileSider .sub-menu h3 i {
+  color: white;
+}
+.mobileSider .sub-menu ul li {
+  margin-top: 4px;
+  margin-left: 3%;
+}
+.mobileSider .sub-menu ul li a {
+  text-decoration: none;
+  width: 135px;
+  height: 24px;
+  color: #546E7A;
+  display: flex;
+  gap: 10px;
+}
+.mobileSider .sub-menu ul li a img {
+  height: 10px;
+  width: 10px;
+  margin-top: 4%;
+}
+.mobileSider .sub-menu ul li a span {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-self: flex-start;
+}
+.mobileSider .sub-menu ul .active a {
+  color: #6851A0;
+}
+
+.open {
+  display: block;
+}
+
+@media all and (max-width: 992px) {
+  header .container .sideContent .inputContainer {
+    display: none;
+  }
+  header .container .logo {
+    display: flex;
+    gap: 10px;
+  }
+  header .container .logo #menuicon {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    margin-top: 4%;
+  }
+  .mainContent aside {
+    display: none;
+  }
+  .mainContent .OverViewPart .overviewContainer {
+    margin-left: 0;
+    padding: 0px 15px;
+  }
+  .mainContent .OverViewPart .overviewContainer .tablesection {
+    padding: 0px;
+  }
+}
+@media all and (max-width: 768px) {
+  .mainContent .OverViewPart .tablesection tr {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
